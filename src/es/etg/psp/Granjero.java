@@ -20,7 +20,7 @@ public class Granjero implements Runnable {
     @Override
     public void run() {
 
-       for (int i = 0; i < 10; i++) {
+       while (true) {
         try {
             Thread.sleep(TIEMPO);
             granja.almacenar(Thread.currentThread().getName());

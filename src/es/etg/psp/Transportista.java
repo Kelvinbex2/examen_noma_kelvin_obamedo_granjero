@@ -19,7 +19,7 @@ public class Transportista implements Runnable {
     @Override
     public void run() {
 
-        for (int i = 0; i < 10; i++) {
+        while (true)  {
             try {
                 Thread.sleep(TIEMPO);
                 granja.transportar(Thread.currentThread().getName());
